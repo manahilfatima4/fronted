@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        body{
+            background-color: rgb(219, 219, 204);
+            padding: 20px;
+        }
+        .container{
+            display:grid;
+            grid-template-columns: repeat(4,1fr);
+            gap:20px
+        }
+        .product-card{
+            padding:15px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 10px red(0,0,0,0);
+            transition: transform 0.3s;
+        }
+        .product-card :hover{
+            transform: translateY(-5px);
+        }
+        .product-card img{
+            width: 100%;
+        
+            border-radius: 8px;
+
+            
+        }
+        .product-card h3{
+            margin:10px 0;
+        }
+        .product-card p{
+            font-size: 14px;
+            color:rgb(22, 20, 22);
+        }
+        .price{
+            display: block;
+            font-size: 18px;
+            font-weight: bold;
+            margin:10px 0;
+        } 
+        .product-card button{
+            background-color: rgb(6, 211, 16);
+            color: rgb(35, 33, 160);
+            border: none;
+            padding: 10px 15px;
+            border-radius: 6px;
+            cursor: painter;
+
+
+        }
+        .product-card button:hover{
+            background-color:rgb(252, 107, 11);
+        }
+        @media (max-width: 600px){
+            .container{
+                grid-template-columns:1fr ;
+            }
+        }
+         @media (min-width:601px)and (max-width :992px){
+            .container{
+                grid-template-columns: repeat( 2,1fr);
+            }
+         }
+            
+         
+            
+        
+        
+    </style>
+    
+    
+</head>
+<body>
+    <div class="container">
+
+    <div class="product-card">
+    <img src= "image/1.jpg" alt="">
+    <h3> product 1</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <span class="price" >Rs.5000</span>
+    <button>buy now</button>
+    </div>
+
+    <div class="product-card">
+    <img src= "image/1.jpg" alt="">
+    <h3> product 2</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <span class="price" >Rs.5000</span>
+    <button>buy now</button>
+    </div>
+ 
+    <div class="product-card">
+    <img src= "image/1.jpg" alt="">
+    <h3> product 3</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <span class="price" >Rs.5000</span>
+    <button>buy now</button>
+    </div>
+ 
+    <div class="product-card">
+    <img src= "image/1.jpg" alt="">
+    <h3> product 4</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <span class="price" >Rs.5000</span>
+    <button>buy now</button>
+    </div>
+ 
+    <div class="product-card">
+    <img src= "image/1.jpg" alt="">
+    <h3> product 5</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <span class="price" >Rs.5000</span>
+    <button>buy now</button>
+    </div>
+ 
+    <div class="product-card">
+    <img src= "image/1.jpg" alt="">
+    <h3> product 6</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <span class="price" >Rs.5000</span>
+    <button>buy now</button>
+    </div>
+ 
+    <div class="product-card">
+    <img src= "image/1.jpg" alt="">
+    <h3> product 7</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <span class="price" >Rs.5000</span>
+    <button>buy now</button>
+    </div>
+
+    <div class="product-card">
+    <img src= "image/1.jpg" alt="">
+    <h3> product 8</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <span class="price" >Rs.5000</span>
+    <button>buy now</button>
+    </div>
+
+    </div>
+    </div>
+    </div>
+    
+</body>
+</html>
